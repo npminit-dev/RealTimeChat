@@ -1,0 +1,117 @@
+body{
+    width: 100vw;
+    background-image: url("mainbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Exo', sans-serif;
+    padding: 20px;
+    padding-top: 80px;
+    line-height: 0;
+    font-size: 0;
+}
+
+.writemsg{
+    position: fixed;
+    top: 20px;
+    height: 40px;
+    width: 68vw;
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: normal;
+    background-color: rgba(255, 255, 255, 0.788);
+    padding-left: 15px;
+    border-radius: 3px;
+    z-index: 1000;
+}
+
+.writemsg:focus{
+    outline: none;
+}
+
+.sendmsg{
+    position: fixed;
+    top: 20px;
+    right: 7%;
+    bottom: 0;
+    height: 40px;
+    width: 15vw;
+    font-size: 17px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: normal;
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 3px;
+    transition-duration: 0.15s;
+    z-index: 1000;
+}
+
+.sendmsg:hover{
+    background-color: rgb(12, 36, 17);
+    color: white;
+}
+
+.message{
+    display: block;
+    width: 38vw;
+    background-color: white;
+    font-size: 14px;
+    padding: 10px;
+    padding-bottom: 10%;
+    margin: 10px;
+    line-height: normal;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: .250s;
+    transition-duration: .2s;
+    z-index: 500;
+}
+
+.message:hover{
+    transform: scale(1.05,1.05);
+}
+
+.sended{
+    background-color: rgba(255, 140, 0, 0.753);
+    color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 61% 75%, 32% 100%, 36% 75%, 0% 75%);
+    font-size: 15px;
+}
+
+.received{
+    background-color: rgba(0, 191, 255, 0.767) ;
+    color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 71% 75%, 75% 100%, 50% 75%, 0% 75%);
+    margin-left: 50vw;
+    font-size: 15px;
+}
+
+.info{
+    display: inline-block;
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    padding-left: 20px;
+    bottom: 0;
+    left: 0;
+    padding: 2px;
+    background-color: rgba(180, 253, 222, 0.699);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: normal;
+    animation-name: aparecer;
+    animation-duration: .2s;
+    filter: contrast(1.3);
+    z-index: 1000;
+}
+
+@keyframes appear{
+    from{
+        transform: scale(.1,.1);
+    }
+
+    to{
+        transform: scale(1,1);
+    }
+}
